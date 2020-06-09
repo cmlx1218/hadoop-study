@@ -11,7 +11,15 @@
     <modules>
         <module>hdfs-study</module>
         <module>mapreduce-study</module>
+        <module>zookeeper-study</module>
     </modules>
+
+    <properties>
+        <version.log4j-core>2.8.2</version.log4j-core>
+        <version.hadoop>2.7.2</version.hadoop>
+        <version.fastjson>1.2.68</version.fastjson>
+        <version.zookeeper>3.4.10</version.zookeeper>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -22,29 +30,35 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.8.2</version>
+            <version>${version.log4j-core}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
-            <version>2.7.2</version>
+            <version>${version.hadoop}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>2.7.2</version>
+            <version>${version.hadoop}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
-            <version>2.7.2</version>
+            <version>${version.hadoop}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.68</version>
+            <version>${version.fastjson}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${version.zookeeper}</version>
         </dependency>
 
 
